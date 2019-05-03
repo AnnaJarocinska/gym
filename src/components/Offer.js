@@ -1,8 +1,8 @@
 import React from 'react';
 const Offer = () => {
-    return (<div>
+    return (<p>
         Oferta
-    </div>  );
+    </p>  );
 }
  
 export default Offer;
