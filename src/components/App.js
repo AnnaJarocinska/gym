@@ -1,13 +1,15 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import  'jquery/dist/jquery.min';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
-
+import Slider from '../components/Slider'
 import './App.css';
 
 const App = () => {
@@ -17,10 +19,13 @@ const App = () => {
           <div className="app">
           <header>
 {<Navigation/>}
-{<Header/>}
+
+ {<Slider/>}
+ {<Header/>}
 </header>
 <main>
   {<Main/>}
+ 
 </main>
 
 <footer>{<Footer/>}</footer>

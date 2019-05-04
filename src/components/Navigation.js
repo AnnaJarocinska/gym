@@ -1,31 +1,35 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom'
+// import{NavLink} from 'react-router-dom';
+
+import {Navbar, Nav}from 'react-bootstrap';
+
+
+
+
+
+
+
 
 
 const Navigation = () => {
     
     return ( 
-        <nav className="navbar navbar default-navbar navbar-fixed-top navbar-dark bg-danger navbar-expand-md">
-        <div className="container">
-        <div className="navbar-header">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
-        aria-controls="mainmenu"
-         aria expanded="false" aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div className="collapse navbar-collapse" id="mainmenu">
-        <ul className="navbar-nav">
-          <li className="nav-item " ><NavLink to="/"exact className="nav-link">Start</NavLink></li>
-          <li className= "nav-item"><NavLink to="/Offer"className="nav-link" >Oferta</NavLink></li>
-          <li className= "nav-item"><NavLink to="/Schedule"className="nav-link" >Grafik</NavLink></li>
-          <li className= "nav-item" ><NavLink to="/Description" className="nav-link">Opis zajęć</NavLink></li>
-          <li className= "nav-item"><NavLink to="/Trainers" className="nav-link">Trenerzy</NavLink></li>
-          <li className= "nav-item"><NavLink to="/Contact" className="nav-link">Kontakt</NavLink></li>
-        </ul>
-        </div>
-        </div>
-        </nav>
+<Navbar bg="danger" expand="md" variant="dark">
+  <Navbar.Brand href="/"exact>FitROCK!</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="/"exact>O nas</Nav.Link>
+      <Nav.Link href="/Offer">Oferta</Nav.Link>
+      <Nav.Link href="/Schedule">Grafik</Nav.Link>
+      <Nav.Link href="/Description">Opis zajęć</Nav.Link>
+      <Nav.Link href="/Trainers">Trenerzy</Nav.Link>
+      <Nav.Link href="/Contact">Kontakt</Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+  
+       
         );
 }
  
