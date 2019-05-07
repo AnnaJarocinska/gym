@@ -2,7 +2,8 @@ import React from 'react';
 // import{NavLink} from 'react-router-dom';
 
 import {Navbar, Nav}from 'react-bootstrap';
-
+import logo from '../trainersPictures/logo.png';
+import './Navigation.css'
 
 
 
@@ -15,7 +16,7 @@ const Navigation = () => {
     
     return ( 
 <Navbar bg="danger" expand="md" variant="dark">
-  <Navbar.Brand href="/"exact>FitROCK!</Navbar.Brand>
+  <Navbar.Brand href="/"exact><img className="logo" src={logo} alt="logo"/> Fit<span className="rock">ROCK!</span></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

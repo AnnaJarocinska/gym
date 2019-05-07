@@ -1,48 +1,76 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
 import S1M from '../trainersPictures/S1M.jpg';
 import S2M from '../trainersPictures/S2M.jpg';
 import S3M from '../trainersPictures/S3M.jpg';
+import S5M from '../trainersPictures/S5M.jpg';
+
+import './Slider.css'
 
 const Slider = () => {
   return ( 
+  <div className="slider">
     <Carousel>
   <Carousel.Item>
+    <div className="slide">
     <img
-      className="d-block w-100"
+      className="d-block w-100 "
       src={S1M}
       alt="First"
     />
+    </div>
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <p>Tylko u nas! <span className="rock">ostry</span> wycisk i <span className="rock">ostre</span> granie! </p>
+      <p> Karnet open już za 100zł! </p>
+     
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
+    <div className="slide">
     <img
       className="d-block w-100"
       src={S2M}
       alt="second"
     />
-
+</div>
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Chcesz dbać o formę ale podpisywać umowę na lata niekoniecznie?</p>
+      <p>Przyjdź do nas i ćwicz bez zobowiązań! </p>
+      <Button variant="danger">Sprawdź</Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
+    <div className="slide">
     <img
       className="d-block w-100"
       src={S3M}
       alt="Third"
     />
+    </div>
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <p>Masz dość ćwiczeń w rytmie disco?</p>
+      <p>Przyjdź do nas! Tu mocy dodaje <span className="rock">rock</span>!</p>
+    
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <div className="slide">
+    <img
+      className="d-block w-100"
+      src={S5M}
+      alt="Fourth"
+    />
+    </div>
+    <Carousel.Caption>
+      <p>Chcesz ćwiczyć na okrągło?</p>
+      <p>U nas możesz- siłownia czynna 24h!</p>
+      <Button variant="danger">Sprawdź</Button>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</div>
    );
 }
  

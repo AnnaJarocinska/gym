@@ -1,0 +1,9 @@
+.rock{
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    color:white !important;
+}
+
+p{
+    font-size: 25px !important;
+}
