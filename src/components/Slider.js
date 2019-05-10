@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import S1M from '../trainersPictures/S1M.jpg';
@@ -37,7 +38,7 @@ const Slider = () => {
     <Carousel.Caption>
       <p>Chcesz dbać o formę ale podpisywać umowę na lata niekoniecznie?</p>
       <p>Przyjdź do nas i ćwicz bez zobowiązań! </p>
-      <Button variant="danger">Sprawdź</Button>
+    <Link to="/Offer"><Button variant="danger">Sprawdź</Button></Link>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -52,7 +53,7 @@ const Slider = () => {
     <Carousel.Caption>
       <p>Masz dość ćwiczeń w rytmie disco?</p>
       <p>Przyjdź do nas! Tu mocy dodaje <span className="rock">rock</span>!</p>
-    
+      <Link to="/Playlist"><Button variant="danger">Sprawdź co teraz gramy!</Button></Link>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -66,7 +67,6 @@ const Slider = () => {
     <Carousel.Caption>
       <p>Chcesz ćwiczyć na okrągło?</p>
       <p>U nas możesz- siłownia czynna 24h!</p>
-      <Button variant="danger">Sprawdź</Button>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

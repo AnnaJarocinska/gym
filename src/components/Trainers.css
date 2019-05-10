@@ -1,3 +1,28 @@
-img{
-    width: 300px;
+
+
+.container{
+    padding-top: 50px;
+   padding-bottom: 80px;
+    background-color: rgb(49, 47, 47);
+    border-bottom: 1px dotted rgb(220, 53, 69) ;
 }
+.photo{
+    margin:auto;
+    width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.caption p{
+    color: black;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+ img.trainer{
+     width: 100%;
+     border: 10px solid white;
+    }
+  

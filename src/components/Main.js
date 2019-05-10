@@ -7,6 +7,7 @@ import Description from '../components/Description';
 import Trainers from '../components/Trainers';
 import Contact from '../components/Contact';
 import Home from '../components/Home';
+import Playlist from './Playlist';
 
 const Main = () => {
     return (  
@@ -17,6 +18,7 @@ const Main = () => {
         <Route path="/Description" component={Description}/>
         <Route path="/Trainers" component={Trainers}/>
         <Route path="/Contact" component={Contact}/>
+        <Route path="/Playlist" component={Playlist}/>
         </Switch> 
     );
 }
