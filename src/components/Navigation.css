@@ -1,3 +1,8 @@
+
+/* 
+*{
+    font-family: 'Proza Libre', sans-serif;
+} */
 img.logo{
 height: 60px;
 width:auto;
@@ -5,6 +10,7 @@ width:auto;
 
 span.rock{
     color: black;
+    font-family: 'Cairo', sans-serif;
 }
 
 .red {

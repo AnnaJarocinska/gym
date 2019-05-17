@@ -4,6 +4,37 @@
     color:white !important;
 }
 
-Carousel p {
-    font-size: 25px !important;
+div.carouselCaption h1, div.carouselCaption h2{
+    font-size: 20px;
+} 
+div.sliderImage{
+    height: 85vh;
+    overflow: hidden;
 }
+
+   .sliderImage img{
+       
+   }
+
+/* 
+div.slide.second{
+    background-position-x: 100%;
+}
+
+div.slide.fourth{
+    background-position-x: 20%;
+} */
+
+
+
+
+/* div.slide{
+    position: relative !important;
+}
+
+div.carouselCaption{
+position: absolute !important;
+top:50% !important;
+left:50% !important;
+transform: translate(50%, 50%) !important;
+}  */

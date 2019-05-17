@@ -16,7 +16,7 @@ const Navigation = () => {
     
     return ( 
 <Navbar bg="danger" expand="md" variant="dark">
-  <Navbar.Brand href="/"exact><img className="logo" src={logo} alt="logo"/> Fit<span className="rock">ROCK!</span></Navbar.Brand>
+  <Navbar.Brand href="/"exact><img className="logo" src={logo} alt="logo"/> Fit<span className="rock">rock!</span></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

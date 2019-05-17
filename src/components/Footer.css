@@ -1,0 +1,24 @@
+
+div.footer{
+    background-color:rgb(220, 53, 69);
+    padding: 20px; 
+}
+img.logoH{
+    height: 80px;
+}
+
+div.icons i{
+    padding: 4px;
+}
+
+div.icons i:nth-of-type(1):hover{
+    color:rgb(60,90,153)
+}
+div.icons i:nth-of-type(2):hover{
+    color:rgb(138, 58, 185)
+
+}
+div.icons i:nth-of-type(3):hover{
+    color:rgb(0, 172, 237)
+
+}

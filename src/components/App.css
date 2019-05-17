@@ -2,12 +2,13 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Proza Libre', sans-serif;
 }
 
 body{
     background-color: black;
     color:white;
+    margin: 0;
 }
 
 nav{

@@ -1,0 +1,19 @@
+  div.iconsC{ 
+   padding: 20px;
+   margin-top: 0;
+ } 
+
+  
+div.iconsC p{
+    text-align: left;
+    margin-left: 50px;
+}
+
+div.iconC i{ 
+    margin:auto 15px ;
+
+}
+iframe{
+    width: 100vw;
+    height: 100vh;
+}

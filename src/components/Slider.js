@@ -14,35 +14,44 @@ const Slider = () => {
   <div className="slider">
     <Carousel>
   <Carousel.Item>
-    <div className="slide">
-    <img
-      className="d-block w-100 "
+    <div className="slide first">
+    <div className="sliderImage">
+  <img
+      className="d-block w-100"
       src={S1M}
       alt="First"
     />
     </div>
     <Carousel.Caption>
-      <p>Tylko u nas! <span className="rock">ostry</span> wycisk i <span className="rock">ostre</span> granie! </p>
-      <p> Karnet open już za 100zł! </p>
-     
+      <div className="carouselCaption">
+      <h1>Tylko u nas! <span className="rock">ostry</span> wycisk i <span className="rock">ostre</span> granie! </h1>
+      <h2> Karnet open już za 100zł! </h2>
+     </div>
     </Carousel.Caption>
+    </div>
   </Carousel.Item>
   <Carousel.Item>
-    <div className="slide">
-    <img
+    <div className="slide second">
+    <div className="sliderImage">
+    <img 
       className="d-block w-100"
       src={S2M}
       alt="second"
     />
-</div>
+    </div>
     <Carousel.Caption>
-      <p>Chcesz dbać o formę ale podpisywać umowę na lata niekoniecznie?</p>
-      <p>Przyjdź do nas i ćwicz bez zobowiązań! </p>
+    <div className="carouselCaption">
+      <h1>Chcesz dbać o formę bez umowy?</h1>
+      <h2>Przyjdź do nas i ćwicz bez zobowiązań! </h2>
+      </div>
     <Link to="/Offer"><Button variant="danger">Sprawdź</Button></Link>
     </Carousel.Caption>
+    </div>
   </Carousel.Item>
   <Carousel.Item>
-    <div className="slide">
+  
+    <div className="slide third">
+    <div className="sliderImage">
     <img
       className="d-block w-100"
       src={S3M}
@@ -51,23 +60,31 @@ const Slider = () => {
     </div>
 
     <Carousel.Caption>
-      <p>Masz dość ćwiczeń w rytmie disco?</p>
-      <p>Przyjdź do nas! Tu mocy dodaje <span className="rock">rock</span>!</p>
+    <div className="carouselCaption">
+      <h1>Masz dość ćwiczeń w rytmie disco?</h1>
+      <h2>Przyjdź do nas! Tu mocy dodaje <span className="rock">rock</span>!</h2>
+      </div>
       <Link to="/Playlist"><Button variant="danger">Sprawdź co teraz gramy!</Button></Link>
+      
     </Carousel.Caption>
+    </div>
   </Carousel.Item>
   <Carousel.Item>
-    <div className="slide">
+    <div className="slide fourth">
+    <div className="sliderImage">
     <img
-      className="d-block w-100"
+      className="d-block "
       src={S5M}
       alt="Fourth"
     />
     </div>
     <Carousel.Caption>
-      <p>Chcesz ćwiczyć na okrągło?</p>
-      <p>U nas możesz- siłownia czynna 24h!</p>
+    <div className="carouselCaption">
+      <h1>Chcesz ćwiczyć na okrągło?</h1>
+      <h2>U nas możesz- siłownia czynna 24h!</h2>
+      </div>
     </Carousel.Caption>
+    </div>
   </Carousel.Item>
 </Carousel>
 </div>
