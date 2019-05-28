@@ -1,12 +1,12 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import Offer from '../components/Offer';
-import Schedule from '../components/Schedule';
-import Description from '../components/Description';
-import Trainers from '../components/Trainers';
-import Contact from '../components/Contact';
-import Home from '../components/Home';
+import Offer from './Offer';
+import Schedule from './Schedule';
+import Description from './Description';
+import Trainers from './Trainers';
+import Contact from './Contact';
+import Home from './Home';
 import Playlist from './Playlist';
 
 const Main = () => {

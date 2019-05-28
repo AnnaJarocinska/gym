@@ -1,12 +1,12 @@
 import React from 'react';
 
-import W0S from '../trainersPictures/W0S.jpg';
-import W1S from '../trainersPictures/W1S.jpg';
-import W2S from '../trainersPictures/W2S.jpg';
-import W3S from '../trainersPictures/W3S.jpg';
-import W4M from '../trainersPictures/W4M.jpg';
-import W5S from '../trainersPictures/W5S.jpg';
-import W6S from '../trainersPictures/W6S.jpg';
+import W0S from '../Pictures/W0S.jpg';
+import W1S from '../Pictures/W1S.jpg';
+import W2S from '../Pictures/W2S.jpg';
+import W3S from '../Pictures/W3S.jpg';
+import W4M from '../Pictures/W4M.jpg';
+import W5S from '../Pictures/W5S.jpg';
+import W6S from '../Pictures/W6S.jpg';
 import './Reasons.css'
 
 

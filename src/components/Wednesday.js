@@ -13,8 +13,6 @@ const Wednesday = () => {
                 <tr>
                 <th>8:00 - 9:00</th>
                     <th>morning power!</th>
-                  
-                   
                 </tr>
                 <tr>
                 <th>9:00 - 10:00</th>

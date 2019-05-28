@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import TP0S from '../trainersPictures/TP0S.jpg';
-import TP1S from '../trainersPictures/TP1S.jpg';
-import TP2S from '../trainersPictures/TP2S.jpg';
-import TP3S from '../trainersPictures/TP3S.jpg';
-import TP4S from '../trainersPictures/TP4S.jpg';
+import TP0S from '../Pictures/TP0S.jpg';
+import TP1S from '../Pictures/TP1S.jpg';
+import TP2S from '../Pictures/TP2S.jpg';
+import TP3S from '../Pictures/TP3S.jpg';
+import TP4S from '../Pictures/TP4S.jpg';
 import './Trainers.css';
 
 
@@ -60,13 +60,13 @@ const Trainers = () => {
         <div className="row align-items-center">
             <div className={trainer.class}>
                 <Image src={trainer.picture} alt={trainer.name}
-                 className="img-responsive trainer" />
+                    className="img-responsive trainer" />
                 <div className="caption">
                     <p>{trainer.name} "{trainer.alias}"</p>
                 </div>
             </div>
             <div className="description col-md-6 col-lg-6">
-            <p className="italic">{trainer.about}</p>
+                <p className="italic">{trainer.about}</p>
             </div>
         </div>
     ))

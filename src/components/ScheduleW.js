@@ -1,8 +1,10 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 
+
 const ScheduleW = () => {
     return ( 
+        <div className="table">
         <Table responsive striped bordered hover variant="dark"className=" d-none d-md-block">
                 <thead>
                     <tr>
@@ -130,6 +132,7 @@ const ScheduleW = () => {
 
                 </tbody>
             </Table>
+            </div>
      );
 }
  

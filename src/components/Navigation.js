@@ -1,8 +1,7 @@
 import React from 'react';
-// import{NavLink} from 'react-router-dom';
 
 import {Navbar, Nav}from 'react-bootstrap';
-import logo from '../trainersPictures/logo.png';
+import logo from '../Pictures/logo.png';
 import './Navigation.css'
 
 

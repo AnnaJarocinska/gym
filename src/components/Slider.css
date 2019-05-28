@@ -4,37 +4,17 @@
     color:white !important;
 }
 
-div.carouselCaption h1, div.carouselCaption h2{
-    font-size: 20px;
-} 
 div.sliderImage{
-    height: 85vh;
+    max-height: 85vh;
     overflow: hidden;
 }
 
-   .sliderImage img{
-       
-   }
+h1, h2{
+    font-size: 30px;
 
-/* 
-div.slide.second{
-    background-position-x: 100%;
 }
 
-div.slide.fourth{
-    background-position-x: 20%;
-} */
-
-
-
-
-/* div.slide{
-    position: relative !important;
+h2{
+    text-transform: uppercase;
+    /* margin-bottom: 20vh; */
 }
-
-div.carouselCaption{
-position: absolute !important;
-top:50% !important;
-left:50% !important;
-transform: translate(50%, 50%) !important;
-}  */

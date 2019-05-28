@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import Slider from '../components/Slider';
-import Navigation from '../components/Navigation';
+import Slider from './Slider';
+import Navigation from './Navigation';
 
 
 

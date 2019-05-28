@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import './Offer.css';
-import logo from '../trainersPictures/logo.png';
+import logo from '../Pictures/logo.png';
 
 
 const name = <><p>Fit <span className="rock">rock</span> </p></>
