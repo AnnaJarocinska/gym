@@ -1,31 +1,27 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import './App.css';
+import '../style/App.css';
 
 
 const App = () => {
-    return ( 
-      
-        <Router>
-          <div className="app">
-          <header>
- {<Header/>}
-</header>
-<main>
-  
-  
-  {<Main/>}
- 
-</main>
+  return (
 
-<footer>{<Footer/>}</footer>
-</div>
-        </Router>
-  
-     );
+    <Router>
+      <div className="app">
+        <header>
+          <Header/>
+        </header>
+        <main>
+          <Main/>
+        </main>
+        <footer><Footer /></footer>
+      </div>
+    </Router>
+
+  );
 }
 
 

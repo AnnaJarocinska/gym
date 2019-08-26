@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Image from 'react-bootstrap/Image';
 import TP0S from '../Pictures/TP0S.jpg';
 import TP1S from '../Pictures/TP1S.jpg';
 import TP2S from '../Pictures/TP2S.jpg';
 import TP3S from '../Pictures/TP3S.jpg';
 import TP4S from '../Pictures/TP4S.jpg';
-import './Trainers.css';
+import "../style/Trainers.css";
 
 
 const trainers = [
@@ -15,7 +15,7 @@ const trainers = [
         alias: 'Arni',
         picture: TP0S,
         about: "Incididunt reprehenderit eu reprehenderit sunt dolor labore id. In commodo Lorem laborum commodo laborum aliquip occaecat. Aliquip nulla minim ullamco dolore id dolore. Ullamco irure mollit mollit exercitation ad laborum sit labore ex commodo.loremAmet labore reprehenderit nisi elit est amet sint reprehenderit sit enim do.Ad exercitation duis nulla cupidatat ullamco duis duis nisi ad veniam cupidatat laborum cillum.Lorem culpa voluptate esse ea non exercitation in id mollit irure velit ea. Culpa proident irure esse sint. Mollit adipisicing et aliqua labore voluptate cillum quis velit dolor ex.",
-        class: "photo col-md-6 col-lg-4"
+        class: "photo col-md-6 col-lg-4 left"
     },
 
     {
@@ -24,7 +24,7 @@ const trainers = [
         alias: 'Nikita',
         picture: TP1S,
         about: "Nulla nostrud officia aliqua pariatur labore cupidatat voluptate ipsum culpa laborum elit. Incididunt anim in officia tempor et ea tempor ad sunt consectetur aliquip aute. Ipsum commodo aliqua mollit aliqua eiusmod ut nulla velit qui proident nulla id culpa.Enim nulla veniam esse in ut qui voluptate. Minim deserunt ut laboris veniam voluptate excepteur consectetur dolor excepteur cupidatat ut est amet anim. Ex cupidatat commodo ex labore qui. Veniam do veniam officia quis. Eiusmod irure ullamco ad voluptate aliqua sit minim sunt.Ipsum fugiat cillum id dolor exercitation. Aute ex quis et anim. Minim magna mollit minim aliquip. Cillum nostrud pariatur deserunt irure et exercitation adipisicing mollit laboris minim incididunt magna officia sunt.",
-        class: "photo col-md-6 order-md-1 col-lg-4"
+        class: "photo col-md-6 order-md-1 col-lg-4 right"
     },
 
     {
@@ -55,32 +55,124 @@ const trainers = [
         class: "photo col-md-6 col-lg-4"
     }
 ]
-const Trainers = () => {
-    let instructors = trainers.map(trainer => (
-        <div className="row align-items-center">
-            <div className={trainer.class}>
-                <Image src={trainer.picture} alt={trainer.name}
-                    className="img-responsive trainer" />
-                <div className="caption">
-                    <p>{trainer.name} "{trainer.alias}"</p>
+class Trainers extends Component {
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleDescriptionScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleDescriptionScroll);
+    }
+
+    handleDescriptionScroll = () => {
+
+        const t0 = document.getElementById('0');
+        const t1 = document.getElementById('1');
+        const t2 = document.getElementById('2');
+        const t3 = document.getElementById('3');
+        const t4 = document.getElementById('4');
+
+
+        if (window.innerWidth < 600) {
+
+            t0.classList.add('left');
+
+            if (window.scrollY > 550) {
+                t1.classList.add('right')
+            };
+
+            if (window.scrollY > 1900) {
+                t2.classList.add('left')
+            };
+
+            if (window.scrollY > 3000) {
+                t3.classList.add('right')
+            };
+            if (window.scrollY > 3800) {
+                t4.classList.add('left')
+            };
+        }
+
+
+        if (window.innerWidth > 600) {
+
+            if (window.scrollY > 420) {
+                t0.classList.add('left')
+            };
+
+            if (window.scrollY > 720) {
+                t1.classList.add('right')
+            };
+
+            if (window.scrollY > 1220) {
+                t2.classList.add('left')
+            };
+
+            if (window.scrollY > 1420) {
+                t3.classList.add('right')
+            };
+
+            if (window.scrollY > 1600) {
+                t4.classList.add('left')
+            };
+
+        }
+
+        if (window.innerWidth > 1000) {
+
+            if (window.scrollY > 400) {
+                t0.classList.add('descriptionAfterScroll')
+            };
+
+            if (window.scrollY > 850) {
+                t1.classList.add('descriptionAfterScroll')
+            };
+
+            if (window.scrollY > 1300) {
+                t2.classList.add('descriptionAfterScroll')
+            };
+
+            if (window.scrollY > 1950) {
+                t3.classList.add('descriptionAfterScroll')
+            };
+
+            if (window.scrollY > 2250) {
+                t4.classList.add('descriptionAfterScroll')
+            };
+
+            
+        }
+
+    }
+
+
+    render() {
+
+        return (
+            <>
+                <header>
+                    <p> Nasi trenerzy</p>
+                </header>
+                <div className="container">
+                    {trainers.map((trainer, id) => (
+                        <div className="wrapper row align-items-center" key={trainer.name} id={id}>
+                            <div className={trainer.class}>
+                                <Image src={trainer.picture} alt={trainer.name}
+                                    className="img-responsive trainer" />
+                                <div className="caption">
+                                    <p>{trainer.name} "{trainer.alias}"</p>
+                                </div>
+                            </div>
+                            <div className="description col-md-6">
+                                <p className="italic">{trainer.about}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            </div>
-            <div className="description col-md-6 col-lg-6">
-                <p className="italic">{trainer.about}</p>
-            </div>
-        </div>
-    ))
-
-
-    return (<>
-        <header>
-            <p> Nasi trenerzy</p>
-        </header>
-        <div className="container">
-            {instructors}
-        </div>
-    </>
-    );
+            </>
+        );
+    }
 }
 
 export default Trainers;

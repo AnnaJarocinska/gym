@@ -1,0 +1,23 @@
+
+div.player {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 50;
+    line-height: 50px;
+    border:#dc3545  dotted 1px;
+   }
+
+   span.x{
+       position: absolute;
+       top:0%;
+       right: 0%;
+       font-size: 20px;
+      line-height: 20px;
+      color:#dc3545;
+   }
+
+   .opacity0{
+       opacity: 0;
+   }

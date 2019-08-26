@@ -1,14 +1,14 @@
 import React from 'react';
-import './Home.css'
 import Reasons from './Reasons';
+import '../style/Home.css'
 
 const Home = () => {
     return (
      <>
       <header>
-        <p>Dlaczego my?</p>
+        <p className="title">Dlaczego my?</p>
     </header>
-    {<Reasons/>}
+    <Reasons/>
     </> );
 }
  

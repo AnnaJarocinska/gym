@@ -1,11 +1,11 @@
 import React from 'react';
-import Monday from './Monday';
-import Tuesday from './Tuesday';
-import Wednesday from './Wednesday';
-import Thursday from './Thursday';
-import Friday from './Friday';
-import Saturday from './Saturday';
-import Sunday from './Sunday';
+import Monday from './week/Monday';
+import Tuesday from './week/Tuesday';
+import Wednesday from './week/Wednesday';
+import Thursday from './week/Thursday';
+import Friday from './week/Friday';
+import Saturday from './week/Saturday';
+import Sunday from './week/Sunday';
 import Navweek from './Navweek';
 
 const ScheduleD = () => {

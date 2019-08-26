@@ -1,7 +1,8 @@
 import React from 'react';
-import './Schedule.css';
 import ScheduleD from './ScheduleD';
 import ScheduleW from './ScheduleW';
+import '../style/Schedule.css'
+
 
 const Schedule = () => {
     return (
@@ -9,10 +10,10 @@ const Schedule = () => {
             <header>
                 <p>Harmonogram zajęć</p>
             </header>
-            <article>
+             
                 <ScheduleD />
                 <ScheduleW />
-            </article>
+            
         </>
     );
 }

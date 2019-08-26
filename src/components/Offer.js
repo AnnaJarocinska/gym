@@ -1,8 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import './Offer.css';
 import logo from '../Pictures/logo.png';
-
+import '../style/Offer.css';
 
 const name = <><p>Fit <span className="rock">rock</span> </p></>
 const variants = [
@@ -26,7 +25,7 @@ const variants = [
 
     {
         id: 2,
-        title: 'gym premium',
+        title: 'gym gold',
         gym: 'nieograniczony wstęp na siłownię',
         group: null,
         trainer: 'plan treningowy i opieka trenera w pakiecie',
@@ -59,41 +58,29 @@ const variants = [
         trainer: null,
         price: '75 zł'
     },
-
-
-
-
 ]
 
 
 const Offer = () => {
     let offer = variants.map(variant => (
 
-        <div className="offerContainer col-lg-4 align-self-end flex-column">
-            <div className="offerContent">
-                <h3>{name} {variant.title}</h3>
-                <img className="logoOffer" src={logo} alt="logo" />
-                <p>{variant.gym}</p>
-                <p>{variant.group}</p>
-                <p>{variant.trainer}</p>
-                <p>{variant.price} za miesiąc</p>
-                <p className="align-self-end"><Button variant="secondary"> Kup teraz </Button></p>
-            </div>
+        <div className="offerContainer col-lg-4" key ={variant.title}>
+            <h3>{name} {variant.title}</h3>
+            <img className="logoOffer" src={logo} alt="logo" />
+            <p>{variant.gym}</p>
+            <p>{variant.group}</p>
+            <p>{variant.trainer}</p>
+            <p className="price">{variant.price} za miesiąc
+                <Button variant="secondary"> Kup teraz </Button></p>
         </div>
-
     ))
-
-
-
-
 
     return (
 
-        <div className="container">
-            <div className="row col-lg-10 justify-content-end">
-                {offer}
-            </div>
-        </div>);
+        <div className="row">
+            {offer}
+        </div>
+    )
 }
 
 export default Offer;

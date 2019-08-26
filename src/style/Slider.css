@@ -1,0 +1,28 @@
+.rock{
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    color:white !important;
+}
+
+div.sliderImage{
+    max-height: 85vh;
+    overflow: hidden;
+}
+
+p.sliderTitle1{
+    font-size: 22px;
+}
+
+p.sliderTitle2{
+font-size: 18px;
+}
+
+@media (min-width:600px){
+    p.sliderTitle1{
+        font-size: 40px;
+    }
+    
+    p.sliderTitle2{
+    font-size: 25px;
+    }
+}

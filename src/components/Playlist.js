@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
  
-import './Playlist.css';
+import '../style/Playlist.css';
 
 
 const API = 'https://randomuser.me/api/?results=2'
@@ -20,7 +20,7 @@ componentDidMount(){
     }).then(data =>{
         let songs = data.results.map((song) => {
             return(
-                <div key={song.name.last}>
+                <div className="playlist" key={song.name.last}>
                 <p>
                     {song.name.last}
                 </p>
@@ -30,7 +30,9 @@ componentDidMount(){
         )
         this.setState({songs: songs});
     })
+    
 }
+
 
     render() { 
         return ( 
