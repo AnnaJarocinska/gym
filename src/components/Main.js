@@ -12,12 +12,18 @@ const Main = () => {
     return (
         <HashRouter>
             <Switch>
-                <Route path="/" exact component={Home} />
+                <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
+                <Route path={process.env.PUBLIC_URL + "/Offer"} component={Offer} />
+                <Route path={process.env.PUBLIC_URL + "/Schedule"} component={Schedule} />
+                <Route path={process.env.PUBLIC_URL + "/Description"} component={Description} />
+                <Route path={process.env.PUBLIC_URL + "/Trainers"} component={Trainers} />
+                <Route path={process.env.PUBLIC_URL + "/Contact"} component={Contact} />
+                {/* <Route path="/" exact component={Home} />
                 <Route path={process.env.PUBLIC_URL + "/Offer"} component={Offer} />
                 <Route path="/Schedule" component={Schedule} />
                 <Route path="/Description" component={Description} />
                 <Route path="/Trainers" component={Trainers} />
-                <Route path="/Contact" component={Contact} />
+                <Route path="/Contact" component={Contact} /> */}
             </Switch>
         </HashRouter>
     );
