@@ -7,11 +7,10 @@ Sample gym website
 Practice programming
 
 ## Technologies
-Create React App
-React Router
-Bootstrap 4
-CSS
-Flebox
+- Create React App
+- React Router
+- Bootstrap 4
+- CSS
 
 ## Status
 Project finished
