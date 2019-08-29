@@ -12,12 +12,12 @@ const Navigation = (props) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/" exact>O nas</Nav.Link>
-          <Nav.Link href="/Offer">Oferta</Nav.Link>
-          <Nav.Link href="/Schedule">Grafik</Nav.Link>
-          <Nav.Link href="/Description">Opis zajęć</Nav.Link>
-          <Nav.Link href="/Trainers">Trenerzy</Nav.Link>
-          <Nav.Link href="/Contact">Kontakt</Nav.Link>
+          <Nav.Link href={process.env.PUBLIC_URL + "/"} exact>O nas</Nav.Link>
+          <Nav.Link href={process.env.PUBLIC_URL + "/Offer"}>Oferta</Nav.Link>
+          <Nav.Link href={process.env.PUBLIC_URL + "/Schedule"}>Grafik</Nav.Link>
+          <Nav.Link href={process.env.PUBLIC_URL + "/Description"}>Opis zajęć</Nav.Link>
+          <Nav.Link href={process.env.PUBLIC_URL + "/Trainers"}>Trenerzy</Nav.Link>
+          <Nav.Link href={process.env.PUBLIC_URL + "/Contact"}>Kontakt</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
