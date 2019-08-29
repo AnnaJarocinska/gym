@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, Nav, Link } from 'react-bootstrap';
+import { Navbar, Nav, Link, Button } from 'react-bootstrap';
 import logo from '../Pictures/logo.png';
 import '../style/Navigation.css'
 
@@ -18,12 +18,12 @@ const Navigation = (props) => {
           <Nav.Link href="/Description">Opis zajęć</Nav.Link>
           <Nav.Link href="/Trainers">Trenerzy</Nav.Link>
           <Nav.Link href="/Contact">Kontakt</Nav.Link> */}
-          <Link to="/" exact>O nas</Link>
-          <Link to="/Offer">Oferta</Link>
-          <Link to="/Schedule">Grafik</Link>
-          <Link to="/Description">Opis zajęć</Link>
-          <Link to="/Trainers">Trenerzy</Link>
-          <Link to="/Contact">Kontakt</Link>
+          <Link to="/" exact> <Button variant="danger">O nas</Button></Link>
+          <Link to="/Offer"><Button variant="danger">Oferta</Button></Link>
+          <Link to="/Schedule"><Button variant="danger">Grafik</Button></Link>
+          <Link to="/Description"><Button variant="danger">Opis zajęć</Button></Link>
+          <Link to="/Trainers"><Button variant="danger">Trenerzy</Button></Link>
+          <Link to="/Contact"><Button variant="danger">Kontakt</Button></Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
