@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, HashRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Offer from './Offer';
 import Schedule from './Schedule';
@@ -10,7 +10,7 @@ import Home from './Home';
 
 const Main = () => {
     return (
-        <HashRouter>
+        
             <Switch>
                 <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
                 <Route path={process.env.PUBLIC_URL + "/Offer"} component={Offer} />
@@ -25,7 +25,7 @@ const Main = () => {
                 <Route path="/Trainers" component={Trainers} />
                 <Route path="/Contact" component={Contact} /> */}
             </Switch>
-        </HashRouter>
+
     );
 }
 
