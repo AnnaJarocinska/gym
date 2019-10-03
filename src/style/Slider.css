@@ -10,11 +10,11 @@ div.sliderImage{
 }
 
 p.sliderTitle1{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 p.sliderTitle2{
-font-size: 18px;
+font-size: 15px;
 }
 
 @media (min-width:600px){
@@ -24,5 +24,25 @@ font-size: 18px;
     
     p.sliderTitle2{
     font-size: 25px;
+    }
+}
+
+@media (min-width:1000px){
+    p.sliderTitle1{
+        font-size: 80px;
+    }
+    
+    p.sliderTitle2{
+    font-size: 45px;
+    }
+}
+
+@media (min-width:1300px){
+    p.sliderTitle1{
+        font-size: 120px;
+    }
+    
+    p.sliderTitle2{
+    font-size: 65px;
     }
 }

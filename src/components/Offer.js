@@ -64,7 +64,7 @@ const variants = [
 const Offer = () => {
     let offer = variants.map(variant => (
 
-        <div className="offerContainer col-lg-4" key ={variant.title}>
+        <div className="offerContainer col-sm-12" key ={variant.title}>
             <h3>{name} {variant.title}</h3>
             <img className="logoOffer" src={logo} alt="logo" />
             <p>{variant.gym}</p>
