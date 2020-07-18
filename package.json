@@ -9,7 +9,7 @@
     "gh-pages": "^2.1.1",
     "heroku": "^7.29.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lodash.template": "^4.5.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
